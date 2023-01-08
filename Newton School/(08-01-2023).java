@@ -6,7 +6,7 @@ import java.util.*; // contains Collections framework
 class Main {
     public static void main (String[] args) {
         // Your code here
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] weights = new int[n];
         for (int i = 0; i < n; i++) {
