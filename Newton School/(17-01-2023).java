@@ -1,0 +1,32 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+    public static void main (String[] args) {
+        // Your code here
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        LinkedList<Integer>[] adjList = new LinkedList[n+1];
+        for (int i = 1; i <= n; i++) {
+            adjList[i] = new LinkedList<Integer>();
+        }
+
+        for (int i = 0; i < n-1; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            adjList[a].add(b);
+            adjList[b].add(a);
+        }
+
+        for (int i = 1; i <= n; i++) {
+            if (adjList[i].size() == n-1) {
+                System.out.println("Yes");
+                return;
+            }
+        }
+        System.out.println("No");
+    }
+}
