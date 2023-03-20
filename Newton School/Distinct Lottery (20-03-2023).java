@@ -17,5 +17,16 @@ class Main {
             itemCounts.put(item, count + 1);
         }
         System.out.println(itemCounts.size());
+        
+                    ////   OR        /////////
+        
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         Set<String> items = new HashSet<>();
+//         for (int i = 0; i < n; i++) {
+//             String s = sc.next();
+//             items.add(s);
+//         }
+//         System.out.println(items.size());
     }
 }
