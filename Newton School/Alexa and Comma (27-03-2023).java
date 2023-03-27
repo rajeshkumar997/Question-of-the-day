@@ -14,6 +14,21 @@ class Main {
     if(n>=1000000000)ans+=n-999999999;
     if(n>=1000000000000l)ans+=n-999999999999l;
     if(n>=1000000000000000l)ans+=n-999999999999999l;
-    System.out.println(ans);
+    System.out.println(ans); 
+        
+        //////////////or      ////////////
+        
+//         Scanner sc=new Scanner(System.in);
+//         long n = sc.nextLong();
+//         long ans = 0;
+//         long temp = 1000;
+
+//         while(temp-1<n){
+//             ans+=n-temp+1;
+//             temp*=1000;
+            
+//         }
+
+//         System.out.print(ans);
     }
 }
